@@ -175,6 +175,7 @@ video {
 .contact-card h2 {
   font-family: "Playfair Display", serif;
   font-size: 26px;
+  text-align: center;
   margin: 0 0 10px;
   color: #6c4a28;
 }
@@ -195,7 +196,7 @@ video {
   padding: 10px 10px;
   font-family: "Poppins", Arial, sans-serif;
   font-size: 14px;
-  color: #5a4a3c;
+  color: #6c4a28;
 }
 
 .contact-card textarea {
@@ -241,6 +242,7 @@ video {
 .schedule-button:hover {
   background-color: #8da27d;
 }
+  
 /* FAQ CARD (RIGHT) */
 .faq-card {
   border-radius: 55px;
@@ -248,9 +250,18 @@ video {
   background-color: #fdf7ef;
   padding: 45px 55px 40px;
   text-align: left;
+  overflow: hidden;
 }
 
-.faq-card h2 {
+.image-column {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+.faq-card h4 {
   text-align: center;
   font-family: "Playfair Display", serif;
   font-size: 26px;
@@ -303,5 +314,66 @@ video {
   border: none;
   cursor: pointer;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+hr.solid {
+  border: none;
+  border-top: 10px solid #8da27d;
+  border-radius: 55px;
+  margin: 5px 0; 
+}
+
+
+
+.offerings-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.offering-box {
+  width: 25%;
+  text-align: center;
+  padding: 20px 10px;
+  border: 2px solid #8da27d;
+  border-radius: 18px;
+  background-color: #fdf7ef;;
+}
+
+.icon-frame {
+  padding: 25px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-frame img {
+  width: 75%;
+  height: auto;
+}
+
+.offering-caption {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: #6b5a4a;
+}
+
+.button {
+  display: inline-block;
+  background-color: #6c4a28;
+  color: white;
+  padding: 12px 32px;
+  font-size: 1.05rem;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: .25s ease;
+}
+
+.button:hover {
+  background-color: #6c4a28;
 }
 
